@@ -76,7 +76,7 @@ export default function TaskModal({
           label="Title"
           placeholder="What needs to be done?"
           value={title}
-          onChange={(e) => setTitle((e.target as HTMLInputElement).value)}
+          onChange={(e: any) => setTitle((e.target as HTMLInputElement).value)}
           error={error && !title.trim() ? 'Title is required' : undefined}
           autoFocus
         />
@@ -85,7 +85,7 @@ export default function TaskModal({
           label="Description"
           placeholder="Add more details..."
           value={description}
-          onChange={(e) => setDescription((e.target as HTMLTextAreaElement).value)}
+          onChange={(e: any) => setDescription((e.target as HTMLTextAreaElement).value)}
           textarea
         />
 
@@ -94,7 +94,7 @@ export default function TaskModal({
           <select
             className={styles.select}
             value={priority}
-            onChange={(e) => setPriority(e.target.value as TaskPriority)}
+            onChange={(e: any) => setPriority(e.target.value as TaskPriority)}
           >
             <option value="low">🟢 Low</option>
             <option value="medium">🟡 Medium</option>
@@ -108,7 +108,7 @@ export default function TaskModal({
             <select
               className={styles.select}
               value={status}
-              onChange={(e) => setStatus(e.target.value as TaskStatus)}
+              onChange={(e: any) => setStatus(e.target.value as TaskStatus)}
             >
               <option value="todo">To Do</option>
               <option value="in_progress">In Progress</option>
