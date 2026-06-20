@@ -145,7 +145,7 @@ export default function DashboardPage() {
                 label="Board Title"
                 placeholder="e.g. Product Launch, Sprint 12..."
                 value={newBoardTitle}
-                onChange={(e) => setNewBoardTitle((e.target as HTMLInputElement).value)}
+                onChange={(e: any) => setNewBoardTitle((e.target as HTMLInputElement).value)}
                 autoFocus
               />
               <div className={styles.modalActions}>
