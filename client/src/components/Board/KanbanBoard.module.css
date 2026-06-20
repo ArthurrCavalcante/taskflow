@@ -1,0 +1,15 @@
+.board {
+  display: flex;
+  gap: var(--spacing-md);
+  overflow-x: auto;
+  padding-bottom: var(--spacing-md);
+  min-height: calc(100vh - 200px);
+}
+
+@media (max-width: 900px) {
+  .board {
+    flex-direction: row;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
